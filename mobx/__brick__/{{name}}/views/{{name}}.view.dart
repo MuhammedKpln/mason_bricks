@@ -6,6 +6,10 @@ class {{ name.pascalCase() }}View extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final controller = getIt<{{ name.pascalCase() }}ViewController>();
+
+
+
     return Container();
   }
 }

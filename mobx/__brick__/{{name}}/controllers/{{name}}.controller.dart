@@ -9,5 +9,10 @@ part '{{name}}.controller.g.dart';
 class {{name.pascalCase()}}ViewController = _{{name.pascalCase()}}ViewControllerBase with _${{name.pascalCase()}}ViewController;
 
 abstract class _{{name.pascalCase()}}ViewControllerBase with Store {
-  
+    {{name.pascalCase()}}ViewControllerBase(this.{{ name }}Repository);
+
+    final {{name.pascalCase()}}Repository {{ name }}Repository;
+
+
+
 }
